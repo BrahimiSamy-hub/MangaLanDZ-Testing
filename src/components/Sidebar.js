@@ -1,5 +1,5 @@
 import React from "react"
-import logo from "../assets/MangaLanDZ.svg"
+import logo from "../assets/a.png"
 import { Link } from "react-router-dom"
 import { FaTimes } from "react-icons/fa"
 import { links } from "../utils/constants"

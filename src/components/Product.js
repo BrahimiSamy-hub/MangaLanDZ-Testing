@@ -1,20 +1,17 @@
 import React from "react"
 import styled from "styled-components"
 // import { formatPrice } from "../utils/helpers"
-import { FaSearch } from "react-icons/fa"
+// import { FaSearch } from "react-icons/fa"
 import { Link } from "react-router-dom"
 
 const Product = ({ images = [], name, price, id, volume }) => {
   return (
     <Wrapper>
       <div style={{ width: 250 + "px" }} className='container center'>
-        <img
-          // style={{ height: 380 + "px", width: 250 + "px" }}
-          src={images[0]}
-          alt={name}
-        />
-        <Link to={`/products/${id}`} className='link'>
-          <FaSearch />
+        <Link to={`/products/${id}`} className=''>
+          <img src={images[0]} alt={name} />
+
+          {/* <FaSearch /> */}
         </Link>
       </div>
       <footer

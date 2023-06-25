@@ -5,7 +5,7 @@ import { useCartContext } from "../context/cart_context"
 import { Link } from "react-router-dom"
 
 const CartTotals = () => {
-  const { total_amount, shipping_fee } = useCartContext()
+  const { total_amount } = useCartContext()
   return (
     <Wrapper>
       <div>
@@ -14,10 +14,10 @@ const CartTotals = () => {
             subtotal :<span>{total_amount} DZD</span>
           </h5>
           <p>
-            shipping fee :<span>{shipping_fee} DZD</span>
+            shipping fee :<span>400 DZD</span>
           </p>
           <h4>
-            order total : <span>{total_amount + shipping_fee} DZD</span>
+            order total : <span>{total_amount + 400} DZD</span>
           </h4>
         </article>
         <Link to='/checkout' className='btn'>

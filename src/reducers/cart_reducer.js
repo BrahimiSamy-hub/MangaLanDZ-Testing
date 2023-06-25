@@ -58,8 +58,8 @@ const cart_reducer = (state, action) => {
       } else {
         return item
       }
+      return { ...state, cart: tempCart } /* bdltlo blasto kan f 63*/
     })
-    return { ...state, cart: tempCart }
   }
   if (action.type === COUNT_CART_TOTALS) {
     const { total_items, total_amount } = state.cart.reduce(

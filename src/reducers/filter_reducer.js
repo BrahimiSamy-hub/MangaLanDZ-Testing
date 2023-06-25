@@ -53,7 +53,7 @@ const filter_reducer = (state, action) => {
   }
   if (action.type === FILTER_PRODUCTS) {
     const { all_products } = state
-    const { text, category, shipping } = state.filters
+    const { text, category /*shipping*/ } = state.filters
 
     let tempProducts = [...all_products]
     // filters
@@ -81,7 +81,7 @@ const filter_reducer = (state, action) => {
       filters: {
         text: "",
         category: "all",
-        shipping: false,
+        // shipping: false,
       },
     }
   }
